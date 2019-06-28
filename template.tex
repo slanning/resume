@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+\usepackage{hyperref}
+
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{}  % \profilepic{scott.jpeg}
+
+\cvname{Scott Lanning} % Your name
+\cvjobtitle{Senior Developer} % Job title/career
+
+\cvdate{}  % Date of birth
+\cvaddress{Ohio, USA} % use \newline if more than 1 line is required
+\cvmail{<EMAIL>}
+\cvnumberphone{<PHONE>}  % filled in by generate.pl (better way to do this?)
+%%%\cvsite{\href{https://www.linkedin.com/in/lannings/}{linkedin.com/in/lannings}\newline\href{https://github.com/slanning}{github.com/slanning}}
+\cvsite{\href{https://linkedin.com/in/lannings}{https://linkedin.com/in/lannings}\newline\href{https://github.com/slanning}{https://github.com/slanning}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\aboutme{Although I studied physics, I went into web programming during the dot-com bubble. Since then I've mainly been a Perl programmer, though in the last decade I've also become an expert in MySQL.} % for no About Me, just leave \aboutme{}
+
+
+% Skill bar section, each skill must have a value between 0 and 6 (float)
+\skills{{C++/2.2},{Go/2.1},{git/3.1},{bash/4.6},{MySQL/5.5},{Perl/5.9}}
+
+% Skill text section, each skill must have a value between 0 an 6
+%%%\skillstext{{lovely/4},{narcissistic/3}}
+\skillstext{}
+
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+
+%%% need bullet-point lists, more focused on what was accomplished for the companies
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+  \twentyitem{2009-2019}{Senior Developer}{Booking.com, Amsterdam}{\begin{itemize}\item in charge of the cron system for several years, monitoring bugs, resource usage, and optimizing Perl and MySQL \item helped write a system to synchronize database tables between schemas \item wrote and maintained cron jobs, including vital ones related to hotel reservations \item wrote the Net::Graphite CPAN module for use with graphite monitoring \item mentored/advised devs in person or online \item used technologies like Redis, memcached, Hadoop, and git \item investigated Vitess for scaling data, and submitted patches for it on github\end{itemize}}
+  \twentyitem{2003-2009}{Software Developer}{World Health Organization, Geneva}{\begin{itemize}\item hired to add functionality to and maintain Bricolage, a content-management system based on Perl and PostgreSQL \item wrote various XML/SOAP scripts to modify and publish the web site\end{itemize}}
+  \twentyitem{2000-2002}{Web Developer}{Public Interactive, Boston}{\begin{itemize}\item developed and maintained Perl CGI scripts for cartalk.com and Apache/mod\_perl modules\end{itemize}}
+\end{twenty}
+
+
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{1997-1999}{Master's in physics}{Boston University}{}
+	\twentyitem{1992-1997}{B.S. in physics}{Ohio State University}{graduated with Honors and Distinction, completed an Honors thesis}
+\end{twenty}
+
+
+\end{document} 
