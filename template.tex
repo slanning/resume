@@ -21,6 +21,7 @@
 
 \documentclass[letterpaper]{twentysecondcv} % a4paper for A4
 
+\usepackage{enumitem}
 \usepackage{hyperref}
 
 
@@ -67,9 +68,9 @@
 
 \begin{twenty} % Environment for a list with descriptions
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
-  \twentyitem{2009-2019}{Senior Developer}{Booking.com, Amsterdam}{\begin{itemize}\item in charge of the cron system for several years, monitoring bugs, resource usage, and optimizing Perl and MySQL \item helped write a system to synchronize database tables between schemas \item wrote and maintained cron jobs, including vital ones related to hotel reservations \item wrote the Net::Graphite CPAN module for use with graphite monitoring \item mentored/advised devs in person or online \item used technologies like Redis, memcached, Hadoop, and git \item investigated Vitess for scaling data, and submitted patches for it on github\end{itemize}}
-  \twentyitem{2003-2009}{Software Developer}{World Health Organization, Geneva}{\begin{itemize}\item hired to add functionality to and maintain Bricolage, a content-management system based on Perl and PostgreSQL \item wrote various XML/SOAP scripts to modify and publish the web site\end{itemize}}
-  \twentyitem{2000-2002}{Web Developer}{Public Interactive, Boston}{\begin{itemize}\item developed and maintained Perl CGI scripts for cartalk.com and Apache/mod\_perl modules\end{itemize}}
+  \twentyitem{2009-2019}{Senior Developer}{Booking.com, Amsterdam}{\begin{itemize}[leftmargin=*]\item in charge of the cron system for several years, monitoring bugs, resource usage, and optimizing Perl and MySQL \item helped write a system to synchronize database tables between schemas \item wrote and maintained cron jobs, including vital ones related to hotel reservations \item wrote the Net::Graphite CPAN module for use with graphite monitoring \item mentored/advised devs in person or online \item used technologies like Redis, memcached, Hadoop, and git \item investigated Vitess for scaling data, and submitted patches for it on github\end{itemize}}
+  \twentyitem{2003-2009}{Software Developer}{World Health Organization, Geneva}{\begin{itemize}[leftmargin=*]\item hired to add functionality to and maintain Bricolage, a content-management system based on Perl and PostgreSQL \item wrote various XML/SOAP scripts to modify and publish the web site\end{itemize}}
+  \twentyitem{2000-2002}{Web Developer}{Public Interactive, Boston}{\begin{itemize}[leftmargin=*]\item developed and maintained CGI scripts for cartalk.com and Apache/mod\_perl modules\end{itemize}}
 \end{twenty}
 
 
@@ -77,7 +78,7 @@
 
 \begin{twenty} % Environment for a list with descriptions
 	\twentyitem{1997-1999}{Master's in physics}{Boston University}{}
-	\twentyitem{1992-1997}{B.S. in physics}{Ohio State University}{graduated with Honors and Distinction, completed an Honors thesis}
+	\twentyitem{1992-1997}{B.S. in physics}{Ohio State University}{\begin{itemize}[leftmargin=*]\item graduated with Honors and Distinction \end{itemize}}
 \end{twenty}
 
 

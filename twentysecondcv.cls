@@ -231,7 +231,7 @@
 	#1&\parbox[t]{0.83\textwidth}{%
 		\textbf{#2}%
 		\hfill%
-		{\footnotesize#3}\\%
+		{\footnotesize#3}%
 		#4\vspace{\parsep}%
 	}\\
 }
