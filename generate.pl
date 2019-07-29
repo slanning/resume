@@ -12,7 +12,7 @@ my ($EMAIL, $PHONE) = @ARGV;
 
 # might need another one for the .cls file
 my $template_file = File::Spec->catfile($Bin, 'template.tex');
-my $output_file = File::Spec->catfile($Bin, 'twentysecondcv.tex');
+my $output_file = File::Spec->catfile($Bin, 'resume-scott-lanning.tex');
 
 {
     open(my $rh, '<', $template_file);
