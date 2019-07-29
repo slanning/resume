@@ -1,3 +1,5 @@
+% modified by Scott Lanning based on:
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Twenty Seconds Resume/CV
 % LaTeX Template
@@ -7,17 +9,12 @@
 % http://www.LaTeXTemplates.com
 %
 % Original author:
-% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by
 % Vel (vel@LaTeXTemplates.com)
 %
 % License:
 % The MIT License (see included LICENSE file)
-%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
 
 \documentclass[letterpaper]{twentysecondcv} % a4paper for A4
 
@@ -35,42 +32,38 @@
 
 \cvname{Scott Lanning} % Your name
 \cvjobtitle{Senior Developer} % Job title/career
-
 \cvdate{}  % Date of birth
 \cvaddress{Ohio, USA} % use \newline if more than 1 line is required
-\cvmail{<EMAIL>}
+\cvmail{<EMAIL>}  % filled in by generate.pl
 \cvnumberphone{<PHONE>}  % filled in by generate.pl (better way to do this?)
-%%%\cvsite{\href{https://www.linkedin.com/in/lannings/}{linkedin.com/in/lannings}\newline\href{https://github.com/slanning}{github.com/slanning}}
 \cvsite{\href{https://linkedin.com/in/lannings}{https://linkedin.com/in/lannings}\newline\href{https://github.com/slanning}{https://github.com/slanning}}
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
 
-\aboutme{Although I studied physics, I went into web programming during the dot-com bubble. Since then I've mainly been a Perl programmer, though in the last decade I've also become an expert in MySQL.} % for no About Me, just leave \aboutme{}
+ % for no About Me, just leave \aboutme{} empty
+\aboutme{After studying physics, I went into web programming during the dot-com bubble. Since then I've mainly been a Perl programmer and developed an expertise in MySQL.}
 
+% Skill bar section, between 0 and 6 (float)
+\skills{{C++/2.2},{Go/2.1},{shell scripting/4.6},{MySQL/5.4},{Perl/5.6}}
 
-% Skill bar section, each skill must have a value between 0 and 6 (float)
-\skills{{C++/2.2},{Go/2.1},{git/3.1},{bash/4.6},{MySQL/5.5},{Perl/5.9}}
-
-% Skill text section, each skill must have a value between 0 an 6
+% Skill text section, between 0 an 6
 %%%\skillstext{{lovely/4},{narcissistic/3}}
 \skillstext{}
 
 
-\makeprofile % Print the sidebar
+\makeprofile % Print the sidebar above
 
 %----------------------------------------------------------------------------------------
-
-%%% need bullet-point lists, more focused on what was accomplished for the companies
 
 \section{Experience}
 
 \begin{twenty} % Environment for a list with descriptions
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
-  \twentyitem{2009-2019}{Senior Developer}{Booking.com, Amsterdam}{\begin{itemize}[leftmargin=*]\item in charge of the cron system for several years, monitoring bugs, resource usage, and optimizing Perl and MySQL \item helped write a system to synchronize database tables between schemas \item wrote and maintained cron jobs, including vital ones related to hotel reservations \item wrote the Net::Graphite CPAN module for use with graphite monitoring \item mentored/advised devs in person or online \item used technologies like Redis, memcached, Hadoop, and git \item investigated Vitess for scaling data, and submitted patches for it on github\end{itemize}}
-  \twentyitem{2003-2009}{Software Developer}{World Health Organization, Geneva}{\begin{itemize}[leftmargin=*]\item hired to add functionality to and maintain Bricolage, a content-management system based on Perl and PostgreSQL \item wrote various XML/SOAP scripts to modify and publish the web site\end{itemize}}
-  \twentyitem{2000-2002}{Web Developer}{Public Interactive, Boston}{\begin{itemize}[leftmargin=*]\item developed and maintained CGI scripts for cartalk.com and Apache/mod\_perl modules\end{itemize}}
+  \twentyitem{2009-2019}{Senior Developer}{Booking.com, Amsterdam}{\begin{itemize}[leftmargin=*]\item in charge of the cron system for several years: monitoring resource usage, optimizing Perl and MySQL, a lot of troubleshooting \item developed code to synchronize database tables \item wrote and maintained cron scripts, some vital to taking bookings \item performed several database migrations/splits \item investigated \href{https://github.com/vitessio/vitess}{Vitess (MySQL clustering proxy)} for scaling data \item created the \href{https://metacpan.org/pod/Net::Graphite}{Net::Graphite CPAN module} for monitoring \item mentored and advised other devs, liaised with DBAs\end{itemize}}
+  \twentyitem{2003-2009}{Software Developer}{World Health Organization, Geneva}{\begin{itemize}[leftmargin=*]\item hired to add functionality to and maintain \href{http://bricolagecms.org/}{Bricolage}, a content-management system based on Perl and PostgreSQL \item wrote XML/SOAP scripts to modify and publish the web site\end{itemize}}
+  \twentyitem{2000-2002}{Web Developer}{Public Interactive, Boston}{\begin{itemize}[leftmargin=*]\item maintained Perl CGI scripts for cartalk.com and Apache/mod\_perl modules\end{itemize}}
 \end{twenty}
 
 
@@ -82,4 +75,4 @@
 \end{twenty}
 
 
-\end{document} 
+\end{document}

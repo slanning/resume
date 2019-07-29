@@ -36,7 +36,7 @@
 %	 MISC CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\renewcommand{\bfseries}{\color{gray}} % Make \textbf produce coloured text instead
+%%%\renewcommand{\bfseries}{\color{gray}} % Make \textbf produce coloured text instead
 
 \pagestyle{empty} % Disable headers and footers
 
@@ -227,12 +227,11 @@
 	\end{tabular*}
 }
 
+%%%        	{\footnotesize#3}%
 \newcommand{\twentyitem}[4]{%
 	#1&\parbox[t]{0.83\textwidth}{%
-		\textbf{#2}%
-		\hfill%
-		{\footnotesize#3}%
-		#4\vspace{\parsep}%
+	\textbf{#2} \hfill \textbf{#3}%
+	#4\vspace{\parsep}%
 	}\\
 }
 
